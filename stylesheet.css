@@ -1,0 +1,19 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.homeButton {
+    background: #2793eb;
+    border: 1px solid #2793eb;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px;
+  }
+
+  .homeButton:hover {
+    background: white;
+    border: 1px solid #2793eb;
+    color: #2793eb;
+  }
