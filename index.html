@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>The Game Shelf</title>
+    <head>
+        <title>The Game Shelf</title>
 
-    <link rel='stylesheet' href='stylesheet.css'/>
-    <script src="main.js"></script>
+        <link rel='stylesheet' href='stylesheet.css'/>
+        <script src="main.js"></script>
 
-</head>
-
-
-<body>
-<h1>Welcome to the Game Shelf</h1>
-<button class="homeButton" onclick="location.href='login.html';">Login</button>
-<button class="homeButton" onclick="location.href='signup.html';">Sign Up</button>
+    </head>
 
 
+    <body>
+    <h1>Welcome to the Game Shelf</h1>
+    <button class="homeButton" onclick="location.href='login.html';">Login</button>
+    <button class="homeButton" onclick="location.href='signup.html';">Sign Up</button>
 
 
 
@@ -28,6 +26,37 @@
 
 
 
+
+
+
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js'
+
+        // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js'
+
+        // Add Firebase products that you want to use
+        import { getAuth } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js'
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js'
+    </script>
+
+    <script type="module">
+
+        // TODO: Replace the following with your app's Firebase project configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCR2AE3liRfWQ8b29oI7DWusmLVtBddlUw",
+            authDomain: "thegameshelf-651f4.firebaseapp.com",
+            databaseURL: "https://thegameshelf-651f4-default-rtdb.firebaseio.com",
+            projectId: "thegameshelf-651f4",
+            storageBucket: "thegameshelf-651f4.appspot.com",
+            messagingSenderId: "161046843334",
+            appId: "1:161046843334:web:0ddaadb5d5cf66d61c6cc7",
+            measurementId: "G-ZS6BJ5GV6D"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 
 
 
